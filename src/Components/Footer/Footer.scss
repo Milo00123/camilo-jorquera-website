@@ -1,0 +1,51 @@
+@use '../../Styles/Partials/Styles' as *;
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include for-tablet{
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    @include for-desktop{
+        width: 1000px;
+    }
+}
+.footer-name{
+    text-align: center;
+    cursor: pointer;
+&:hover{
+    color: rgb(42, 104, 138);
+}
+}
+.footer-box-one{
+@include for-tablet{
+    width: 400px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+}
+.footer-box-two{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    @include for-tablet{
+        width: 200px;
+    }
+}
+.footer-icon{
+font-size: 20px;
+text-decoration: none;
+color: #fff;
+cursor: pointer;
+@include for-tablet{
+    font-size: 30px;
+}
+&:hover{
+    color: rgb(42, 104, 138);
+}
+}

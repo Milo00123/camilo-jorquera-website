@@ -1,0 +1,70 @@
+@keyframes mymove {
+  0% {
+    left: 0px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .footer {
+    width: 90%;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1280px) {
+  .footer {
+    width: 1000px;
+  }
+}
+
+.footer-name {
+  text-align: center;
+  cursor: pointer;
+}
+.footer-name:hover {
+  color: rgb(42, 104, 138);
+}
+
+@media (min-width: 768px) {
+  .footer-box-one {
+    width: 400px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+}
+
+.footer-box-two {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  .footer-box-two {
+    width: 200px;
+  }
+}
+
+.footer-icon {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .footer-icon {
+    font-size: 30px;
+  }
+}
+.footer-icon:hover {
+  color: rgb(42, 104, 138);
+}/*# sourceMappingURL=Footer.css.map */
