@@ -1,0 +1,118 @@
+@keyframes mymove {
+  0% {
+    left: 0px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+.home-container {
+  width: 90%;
+  margin: auto;
+}
+
+.home-letter {
+  font-size: 70px;
+  font-weight: 700;
+}
+.home-letter__1 {
+  color: #6e1817;
+}
+.home-letter__2 {
+  color: #963118;
+}
+.home-letter__3 {
+  color: #ce581b;
+}
+.home-letter__4 {
+  color: #ff8d2f;
+}
+.home-letter__5 {
+  color: #ffd632;
+}
+.home-letter__6 {
+  color: #f4503a;
+}
+.home-letter__7 {
+  color: #fdc348;
+}
+.home-letter__8 {
+  color: red;
+}
+
+.sub-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.sub-title__1 {
+  color: #00b6ff;
+}
+.sub-title__2 {
+  color: #1fc4d4;
+}
+.sub-title__3 {
+  color: #0ffff8;
+}
+
+.home-camilo {
+  font-size: 60px;
+  font-weight: 700;
+}
+.home-camilo__1 {
+  color: #0081ff;
+}
+.home-camilo__2 {
+  color: #00b6ff;
+}
+.home-camilo__3 {
+  color: #1fc4d4;
+}
+.home-camilo__4 {
+  color: #08c9ff;
+}
+.home-camilo__5 {
+  color: #e7ffff;
+}
+.home-camilo__6 {
+  color: #0ffff8;
+}
+.home-camilo__7 {
+  color: #fdc348;
+}
+.home-camilo__8 {
+  color: #179e41;
+}
+.home-camilo__9 {
+  color: #005c1b;
+}
+.home-camilo__10 {
+  color: #fb5e42;
+}
+.home-camilo__11 {
+  color: #ffcc4b;
+}
+.home-camilo__12 {
+  color: #ffff9d;
+}
+.home-camilo__13 {
+  color: #910800;
+}
+.home-camilo__14 {
+  color: #126e46;
+}
+
+.home-images-container {
+  width: 80%;
+  margin: auto;
+}
+
+.developer {
+  position: relative;
+  top: 200px;
+  left: 30%;
+  height: 150px;
+}
+
+.mountain {
+  height: 250px;
+}/*# sourceMappingURL=Home.css.map */

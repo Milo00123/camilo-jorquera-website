@@ -4,7 +4,7 @@ body {
   background-image: radial-gradient(circle, rgb(42, 104, 138) 1px, transparent 1px); /* A dot with transparent around */
   background-size: 30px 30px;
   color: #fff;
-  animation: moveDots 60s linear infinite;
+  animation: moveDots 50s linear infinite;
 }
 
 @keyframes moveDots {

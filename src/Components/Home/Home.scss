@@ -1,0 +1,111 @@
+@use '../../Styles/Partials/Styles' as *;
+
+.home-container{
+    width: 90%;
+    margin: auto;
+}
+.home-letter{
+    font-size: 70px;
+    font-weight: 700;
+    &__1{
+        color: #6e1817;
+    }
+    &__2{
+        color: #963118;
+    }
+    &__3{
+        color: #ce581b;
+    }
+    &__4{
+        color: #ff8d2f;
+    }
+    &__5{
+        color: #ffd632;
+    }
+    &__6{
+        color: #f4503a;
+    }
+    &__7{
+        color: #fdc348;
+    }
+    &__8{
+        color: red;
+    }
+}
+.sub-title{
+    font-size: 30px;
+    font-weight: 700;
+    &__1{
+        color: #00b6ff;
+    }
+    &__2{
+        color: #1fc4d4;
+    }
+    &__3{
+        color: #0ffff8;
+    }
+  
+}
+.home-camilo{
+    font-size: 60px;
+    font-weight: 700;
+    &__1{
+        color: #0081ff;
+    }
+    &__2{
+        color: #00b6ff;
+    }
+    &__3{
+        color: #1fc4d4;
+    }
+    &__4{
+        color: #08c9ff;
+    }
+    &__5{
+        color: #e7ffff;
+    }
+    &__6{
+        color: #0ffff8
+    }
+    &__7{
+        color: #fdc348;
+    }
+    &__8{
+        color: #179e41;
+    }
+    &__9{
+        color: #005c1b;
+    }
+    &__10{
+        color: #fb5e42;
+    }
+    &__11{
+        color: #ffcc4b;
+    }
+    &__12{
+        color: #ffff9d;
+    }
+    &__13{
+        color: #910800;
+    }
+    &__14{
+        color: #126e46;
+    }
+
+}
+.home-images-container{
+    width: 80%;
+    margin: auto;
+
+
+}
+.developer{
+    position: relative;
+    top:200px ;
+    left: 30%;
+    height: 150px;
+    
+}
+.mountain{
+    height: 250px;
+}
