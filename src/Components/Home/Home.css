@@ -6,6 +6,63 @@
     right: 100%;
   }
 }
+@keyframes moveDots {
+  0% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0%;
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 4;
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 4;
+  }
+}
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 4;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 2;
+  }
+  100% {
+    opacity: 3;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
 .home-container {
   width: 90%;
   margin: auto;
@@ -17,6 +74,8 @@
 .home-camilo-container {
   margin-top: 50px;
   margin-left: 5%;
+  animation-name: slide-left;
+  animation-duration: 2s;
 }
 @media (min-width: 768px) {
   .home-camilo-container {
@@ -25,6 +84,7 @@
 }
 @media (min-width: 1280px) {
   .home-camilo-container {
+    height: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -33,6 +93,8 @@
 
 .home-camilo-last-name {
   margin-left: 5%;
+  animation-name: slide-right;
+  animation-duration: 2s;
 }
 @media (min-width: 768px) {
   .home-camilo-last-name {
@@ -50,29 +112,62 @@
 .home-camilo {
   font-size: 60px;
   font-weight: 700;
-}
-.home-camilo__name {
   background: linear-gradient(180deg, #fff, #2d536c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  animation-name: appear;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
-.home-camilo__last {
-  background: linear-gradient(180deg, #fff, #2d536c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+.home-camilo__1 {
+  animation-delay: 2.2s;
+}
+.home-camilo__2 {
+  animation-delay: 2.3s;
+}
+.home-camilo__3 {
+  animation-delay: 2.4s;
+}
+.home-camilo__4 {
+  animation-delay: 2.5s;
+}
+.home-camilo__5 {
+  animation-delay: 2.6s;
+}
+.home-camilo__6 {
+  animation-delay: 2.7s;
+}
+.home-camilo__7 {
+  animation-delay: 2.8s;
+}
+.home-camilo__8 {
+  animation-delay: 2.9s;
+}
+.home-camilo__9 {
+  animation-delay: 3s;
+}
+.home-camilo__10 {
+  animation-delay: 3.2s;
+}
+.home-camilo__11 {
+  animation-delay: 3.3s;
+}
+.home-camilo__12 {
+  animation-delay: 3.4s;
+}
+.home-camilo__13 {
+  animation-delay: 3.5s;
+}
+.home-camilo__14 {
+  animation-delay: 3.6s;
 }
 @media (min-width: 768px) {
   .home-camilo {
-    font-size: 100px;
-  }
-}
-@media (min-width: 1280px) {
-  .home-camilo {
-    font-size: 150px;
+    font-size: 70px;
   }
 }
 
@@ -83,25 +178,30 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s forwards;
+  animation-delay: 3.8s; /* Delay of 3 seconds */
 }
 @media (min-width: 768px) {
   .home-subtitle {
     margin: auto;
     padding: 40px;
-    font-size: 30px;
-  }
-}
-@media (min-width: 1280px) {
-  .home-subtitle {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 
 .home-images-container {
-  width: 80%;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
+  background-color: rgba(5, 61, 80, 0.136);
+  background-image: radial-gradient(circle, rgb(6, 6, 3) 1px, transparent 1px);
+  background-size: 30px 30px;
+  animation: moveDots 8s linear infinite;
+  box-shadow: 0px 2px 5px 0px #0b0b0b;
 }
 
 .developer {
@@ -109,24 +209,29 @@
   top: 390px;
   margin: auto;
   height: 150px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 4s;
 }
 @media (min-width: 768px) {
   .developer {
-    top: 630px;
-    height: 400px;
+    top: 570px;
+    height: 200px;
   }
 }
 @media (min-width: 1280px) {
   .developer {
-    top: 800px;
+    top: 550px;
   }
 }
 
 .mountain {
   height: 250px;
+  animation-name: slide-bottom;
+  animation-duration: 1s;
 }
 @media (min-width: 768px) {
   .mountain {
-    height: 600px;
+    height: 400px;
   }
 }/*# sourceMappingURL=Home.css.map */

@@ -11,18 +11,24 @@
 .home-camilo-container{
     margin-top: 50px;
     margin-left: 5%;
+    animation-name: slide-left;
+    animation-duration: 2s;
     @include for-tablet{
         margin-left: 20%;
     }
     @include for-desktop{
+        height: 20px;
         margin-left:auto ;
         margin-right: auto;
         margin-top: 50px;
      }
      
 }
+
 .home-camilo-last-name{
     margin-left: 5%;
+    animation-name: slide-right;
+    animation-duration: 2s;
     @include for-tablet{
         margin-left: 25%;
     }
@@ -35,28 +41,75 @@
 .home-camilo{
     font-size: 60px;
     font-weight: 700;
-   &__name{
-  
-    background: linear-gradient(180deg, #fff, #2d536c); 
-    -webkit-background-clip: text; 
+    background: linear-gradient(180deg, #fff, #2d536c);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text; 
-    color: transparent; 
-   }
-   &__last{
-    background: linear-gradient(180deg, #fff, #2d536c); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-    background-clip: text; 
-    color: transparent; 
-
-   }
+    background-clip: text;
+    color: transparent;
+    animation-name: appear;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    &__1 { 
+        animation-delay: 2.2s;
+      }
+      
+      &__2 { 
+        animation-delay: 2.3s;
+      }
+      
+      &__3 { 
+        animation-delay: 2.4s;
+      }
+      
+      &__4 { 
+        animation-delay: 2.5s;
+      }
+      &__5 { 
+        animation-delay: 2.6s;
+      }
+      
+      &__6 { 
+        animation-delay: 2.7s;
+      }
+      
+      &__7 { 
+        animation-delay: 2.8s;
+      }
+      
+      &__8 { 
+        animation-delay: 2.9s;
+      }
+      
+      &__9 { 
+        animation-delay: 3s;
+      }
+      
+      &__10 { 
+        animation-delay: 3.2s;
+      }
+      
+      &__11 { 
+        animation-delay: 3.3s;
+      }
+      
+      &__12 { 
+        animation-delay: 3.4s;
+      }
+      
+      &__13 { 
+        animation-delay: 3.5s;
+      }
+      
+      &__14 { 
+        animation-delay: 3.6s;
+      }
+      
    @include for-tablet{
-    font-size: 100px;
+    font-size: 70px;
 }
-@include for-desktop{
-font-size: 150px;
- }
+
 }
 .home-subtitle{
     margin-left: 5%;
@@ -65,21 +118,28 @@ font-size: 150px;
     -webkit-text-fill-color: transparent;
     background-clip: text; 
     color: transparent; 
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s forwards;
+    animation-delay: 3.8s; /* Delay of 3 seconds */
+   
     @include for-tablet{
         margin: auto;
         padding: 40px;
-        font-size: 30px;
+        font-size: 25px;
     }
-    @include for-desktop{
-        font-size: 35px;
-     }
+ 
 }
 .home-images-container{
-    width: 80%;
+    width: fit-content;
+    border-radius: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
-
+    background-color: rgba(5, 61, 80, 0.136); 
+    background-image: radial-gradient(circle, rgb(6, 6, 3) 1px, transparent 1px); 
+    background-size: 30px 30px; 
+    animation: moveDots 8s linear infinite; 
+    box-shadow: 0px 2px 5px 0px #0b0b0b;
 
 }
 .developer{
@@ -87,19 +147,25 @@ font-size: 150px;
     top:390px;
     margin: auto;
     height: 150px;
+    opacity: 0; 
+    animation: fadeIn 1s forwards;
+    animation-delay: 4s;
     @include for-tablet{
-        top: 630px;
-       height: 400px;
+        top: 570px;
+       height: 200px;
     }
     @include for-desktop{
-        top: 800px;
+      top: 550px;
      }
     
 }
 .mountain{
     height: 250px;
+    animation-name: slide-bottom;
+    animation-duration: 1s;
+    
     @include for-tablet{
-        height: 600px;
+        height: 400px;
      }
      
      

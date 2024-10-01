@@ -5,11 +5,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   
+    color: #000;
     @include for-tablet{
         position: relative;
         top: 100px;
         width: 90%;
+        margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
         flex-direction: row;
@@ -46,7 +47,7 @@
 .footer-icon{
 font-size: 20px;
 text-decoration: none;
-color: #fff;
+color: #000;
 cursor: pointer;
 @include for-tablet{
     font-size: 30px;

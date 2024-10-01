@@ -1,18 +1,12 @@
+@use './Styles/Partials/Styles' as *;
 body {
     height: 100vh;
-    background-color: rgb(9, 36, 53); 
-    background-image: radial-gradient(circle, rgb(42, 104, 138) 1px, transparent 1px); /* A dot with transparent around */
+    background-color: #fafafa; 
+    background-image: radial-gradient(circle, rgb(42, 104, 138) 1px, transparent 1px); 
     background-size: 30px 30px; 
     color: #fff;
     animation: moveDots 50s linear infinite; 
 }
 
 
-@keyframes moveDots {
-    0% {
-        background-position: 0 100%; 
-    }
-    100% {
-        background-position: 0 0%;
-    }
-}
+
