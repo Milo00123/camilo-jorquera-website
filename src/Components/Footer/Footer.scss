@@ -1,18 +1,23 @@
 @use '../../Styles/Partials/Styles' as *;
 .footer{
-    margin-top: 30%;
+    margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+   
     @include for-tablet{
+        position: relative;
+        top: 100px;
         width: 90%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         flex-direction: row;
         justify-content: space-between;
     }
     @include for-desktop{
         width: 1000px;
+         
     }
 }
 .footer-name{
