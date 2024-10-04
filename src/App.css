@@ -63,11 +63,17 @@
     opacity: 1;
   }
 }
+@keyframes pulseText {
+  0% {
+    font-weight: 1000;
+  }
+  50% {
+    font-weight: 700;
+  }
+  100% {
+    font-weight: 1000;
+  }
+}
 body {
-  height: 100vh;
-  background-color: #fafafa;
-  background-image: radial-gradient(circle, rgb(42, 104, 138) 1px, transparent 1px);
-  background-size: 30px 30px;
-  color: #fff;
-  animation: moveDots 50s linear infinite;
+  background: linear-gradient(180deg, #080a0a, #2d536c);
 }/*# sourceMappingURL=App.css.map */

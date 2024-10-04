@@ -63,6 +63,17 @@
     opacity: 1;
   }
 }
+@keyframes pulseText {
+  0% {
+    font-weight: 1000;
+  }
+  50% {
+    font-weight: 700;
+  }
+  100% {
+    font-weight: 1000;
+  }
+}
 .home-container {
   width: 90%;
   margin: auto;
@@ -111,7 +122,7 @@
 
 .home-camilo {
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 900;
   background: linear-gradient(180deg, #fff, #2d536c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -172,7 +183,8 @@
 }
 
 .home-subtitle {
-  margin-left: 5%;
+  margin: auto;
+  padding: 30px;
   background: linear-gradient(180deg, #ffc92a, #5f5515);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

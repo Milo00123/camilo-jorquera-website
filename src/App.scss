@@ -1,12 +1,14 @@
 @use './Styles/Partials/Styles' as *;
 body {
-    height: 100vh;
-    background-color: #fafafa; 
-    background-image: radial-gradient(circle, rgb(42, 104, 138) 1px, transparent 1px); 
-    background-size: 30px 30px; 
-    color: #fff;
-    animation: moveDots 50s linear infinite; 
+    // font-family:  Rajdhani, sans-serif;
+    // height: 100vh;
+    // max-height:fit-content; 
+    // background-color: #fafafa; 
+    // background-image: radial-gradient(circle, rgb(42, 104, 138) 1px, transparent 1px); 
+    // background-size: 30px 30px; 
+    // color: #fff;
+    // animation: moveDots 50s linear infinite; 
+    background: linear-gradient(180deg, #080a0a, #2d536c);
+    // background: linear-gradient(180deg, #000000e7, #2d536c);
 }
-
-
 

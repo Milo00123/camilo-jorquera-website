@@ -1,0 +1,149 @@
+@use '../../Styles/Partials/Styles' as *;
+
+.about-container{
+
+}
+
+.title-about{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(180deg, #7b9696, #2d536c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    &__sub{
+        font-weight: 800;      
+    }
+}
+.camilo-container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+ @include for-tablet{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+ }
+ @include for-desktop{
+    width: 1000px;
+ }
+}
+.camilo-image{
+    height: 200px;
+    width: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border: 2px solid black;
+    border-radius: 100%;
+    box-shadow: 0px 2px 5px 0px #0b0b0b;
+
+}
+.p-about-me{
+    font-size: 14px;
+ color: #e0e0c8;
+ padding: 40px;
+ font-weight: 400;
+
+ @include for-tablet{
+    width: 60%;
+    margin-left: 50px;
+    padding: 20px;
+    border-radius: 30px;
+ }
+}
+
+.my-skills{
+width: 100%;
+ height: fit-content;
+}
+.skills-container{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @include for-tablet{
+        width: 700px;
+    }
+@include for-desktop{
+ width: 1000px;
+}
+}
+.icon-container{
+    width: 100px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    @include for-tablet{
+        padding: 20px;
+    }
+}
+.icon{
+    max-height: 40px;
+    padding: 5px;
+    &__netlify{
+       border-radius: 10px;
+    }
+}
+.skills{
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: center;
+    padding: 10px;
+    animation: pulseText 3s infinite;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    @include for-tablet{
+        width: fit-content;
+   
+    }
+    
+   &__js{
+    color: #ffec44;
+   }
+   &__react{
+    color: #08edff;
+   }
+   &__node{
+    color: #7ecd64;
+   }
+   &__axios{
+    color: #af3627;
+   }
+   &__html{
+    color: #d1210c;
+   }
+   &__css{
+    color: #0883be;
+   }
+   &__sass{
+    color: #e31c94;
+   }
+   &__netlify{
+    color: #0e6a4a;
+   }
+   &__router{
+    color: #00ffff;
+   }
+   &__mysql{
+    color: #004269;
+   }
+   &__postman{
+    color: #ff8100;
+   }
+   &__git{
+    color: #00000c;
+   }
+   &__jira{
+    color: #004269;
+   }
+   &__heroku{
+    color: #ff0f9f;
+   }
+}

@@ -63,6 +63,17 @@
     opacity: 1;
   }
 }
+@keyframes pulseText {
+  0% {
+    font-weight: 1000;
+  }
+  50% {
+    font-weight: 700;
+  }
+  100% {
+    font-weight: 1000;
+  }
+}
 .footer {
   margin-top: auto;
   display: flex;
