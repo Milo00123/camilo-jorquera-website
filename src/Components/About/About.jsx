@@ -37,7 +37,7 @@ function About() {
 
 </p>
     </div>
- 
+  <div className='skills-education-wrap'>
       <div className='my-skills'>
         <h2 className='title-about title-about__sub'>MY SKILLS</h2>
             <div className='skills-container'>
@@ -114,12 +114,11 @@ function About() {
        </div>
 
         <div className='my-education'>
-            <h2 className='title-about title-about__sub'>MY EDUCATION</h2>
-            <h3>Software Engineering Diploma</h3>
-            <span>Nov 2023- Jul 2024 / BrainStation</span>
-            <span>isnfis</span>
-            <ul>
-              <li>
+            <h2 className='title-about title-about__sub'>EDUCATION</h2>
+            <h3 >Software Engineering Diploma</h3>
+            <span className='education-date'>Nov 2023- Jul 2024 / BrainStation</span>
+            <ul className='p-about-me education-list-container'>
+              <li className='education-list'>
                 At BrainStation’s Software Engineering bootcamp,
                  I developed a solid understanding of the fundamentals
                   of software engineering and full-stack development. 
@@ -127,14 +126,14 @@ function About() {
                    and JavaScript while also working with robust back-end 
                    technologies to create functional web applications.
                 </li>
-                 <li> 
+                 <li className='education-list'> 
                     The journey began with mastering basic programming concepts,
                     markup languages, and setting up a self-sufficient development
                       environment. I gained practical experience by collaborating on 
                       software engineering projects, utilizing tools like HTML5, 
                       Visual Studio Code, and Jira to manage and develop code efficiently.
                   </li>
-              <li>
+              <li className='education-list'>
                 The bootcamp also focused on back-end development, equipping
                  me with the technical know-how required for full-stack development.
                   Additionally, I explored DevOps methodologies, which simplified
@@ -144,7 +143,7 @@ function About() {
             </ul>
         </div>
 
-
+        </div>
 
 
 

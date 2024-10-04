@@ -8,7 +8,7 @@
     font-size: 50px;
     font-weight: 900;
     text-align: center;
-    background: linear-gradient(180deg, #7b9696, #2d536c);
+    background: linear-gradient(180deg, #6beaea, #2d536c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -29,6 +29,7 @@
  }
  @include for-desktop{
     width: 1000px;
+    padding-bottom: 100px;
  }
 }
 .camilo-image{
@@ -43,15 +44,19 @@
 }
 .p-about-me{
     font-size: 14px;
- color: #e0e0c8;
+ color: #02ddff;
  padding: 40px;
  font-weight: 400;
 
  @include for-tablet{
+    font-size: 16px;
     width: 60%;
     margin-left: 50px;
     padding: 20px;
     border-radius: 30px;
+ }
+ @include for-desktop{
+    
  }
 }
 
@@ -70,7 +75,7 @@ width: 100%;
         width: 700px;
     }
 @include for-desktop{
- width: 1000px;
+ width: 500px;
 }
 }
 .icon-container{
@@ -89,6 +94,9 @@ width: 100%;
     padding: 5px;
     &__netlify{
        border-radius: 10px;
+    }
+    @include for-tablet {
+        max-height: 60px;
     }
 }
 .skills{
@@ -146,4 +154,54 @@ width: 100%;
    &__heroku{
     color: #ff0f9f;
    }
+}
+
+.my-education{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include for-desktop{
+        margin-top: 0;
+    }
+}
+.education-date{
+    font-weight: 600;
+    color:#fcffff,;
+}
+li::marker{
+    color: #00000c;
+}
+h3{
+    color: #2ecccc;
+    font-size: 20px;
+}
+.education-list-container{
+    @include for-desktop{
+        width: 500px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}
+.education-list{
+padding: 10px;
+@include for-desktop{
+    width: 400px;
+    margin-left: 40px;
+}
+}
+.skills-education-wrap{
+   @include for-desktop{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+
+   }
+
 }
