@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import './Home.scss';
 import developer from '../../Assets/Images/IMG_4036-removebg-preview.png';
 import mountain from '../../Assets/Images/IMG_4034-removebg-preview.png';
@@ -30,8 +30,8 @@ function Home() {
             <h2 className='home-subtitle'>SOFTWARE ENGINEER</h2>
             <div 
             className='home-images-container'>
-                <img  className='developer' src={developer}/>
-                <img  className='mountain' src={mountain}/>
+                <img alt='developer' className='developer' src={developer}/>
+                <img alt='mountain' className='mountain' src={mountain}/>
 
             </div>
 

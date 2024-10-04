@@ -30,7 +30,7 @@ function About() {
       with Javascript makes me reinforce my philosophy that NOTHING 
       IS IMPOSSIBLE. I used to enjoy building robots and spaceships
        with whatever I had in my hands when I was a kid and I see
-        programming as ‘legos for adults’. When I am not at my desk
+        programming as "legos for adults". When I am not at my desk
          building or studying, I am mountain biking or snowboarding
           in Whistler where I also instruct these two disciplines.
            Being able to teach extreme sports and also use my brain 
@@ -43,72 +43,72 @@ function About() {
         <h2 className='title-about title-about__sub'>MY SKILLS</h2>
             <div className='skills-container'>
                     <div className='icon-container'>
-                       <img src={js} className='icon icon__js'/>             
+                       <img alt='js' src={js} className='icon icon__js'/>             
                        <div className='skills skills__js'>JavaScript</div>
                    </div>
                     <div className='icon-container'>
-                        <img src={reactIcon} className='icon icon__js'/>    
+                        <img alt='react-icon' src={reactIcon} className='icon icon__react'/>    
                         <div className='skills skills__react'>REACT</div>
                     </div>
 
                     <div className='icon-container'>
-                        <img src={node} className='icon icon__js'/>    
+                        <img alt='node' src={node} className='icon icon__node'/>    
                         <div className='skills skills__node'>NODEJS</div>
                     </div>
                  
 
                           <div className='icon-container'>
-                              <img src={htmlIcon} className='icon icon__js'/>
+                              <img alt='htmlicon' src={htmlIcon} className='icon icon__html'/>
                               <div className='skills skills__html'>HTML</div>
                           </div>
 
                           <div className='icon-container'>
-                            <img src={mysql} className='icon icon__js'/> 
+                            <img alt='mysql' src={mysql} className='icon icon__mysql'/> 
                             <div className='skills skills__mysql'>MYSQL</div>
                         </div>
 
                         <div className='icon-container'>
-                              <img src={cssIcon} className='icon icon__js'/>
+                              <img alt='cssIcon' src={cssIcon} className='icon icon__css'/>
                               <div className='skills skills__css'>CSS</div>
                         </div>
 
                         <div className='icon-container'>
-                            <img src={sassIcon} className='icon icon__js'/>      
+                            <img alt='sass' src={sassIcon} className='icon icon__sass'/>      
                             <div className='skills skills__sass'>SASS</div>
                         </div>
 
                         <div className='icon-container'>
-                            <img src={netlify} className='icon icon__netlify'/> 
+                            <img alt='netlify' src={netlify} className='icon icon__netlify'/> 
                             <div className='skills skills__netlify'>NETLIFY</div>
                         </div>
 
                         <div className='icon-container'>
-                            <img src={reactIcon2} className='icon icon__js'/> 
+                            <img alt='router' src={reactIcon2} className='icon icon__router'/> 
                             <div className='skills skills__router'>REACT ROUTER</div>
                         </div> 
 
                         <div className='icon-container'>
-                              <img src={axiosIcon} className='icon icon__axios'/>
+                              <img alt='axios' src={axiosIcon} className='icon icon__axios'/>
                               <div className='skills skills__axios'>AXIOS</div>
                         </div>
 
                         <div className='icon-container'>
-                            <img src={postman} className='icon icon__js'/> 
+                            <img alt='postman' src={postman} className='icon icon__postman'/> 
                             <div className='skills skills__postman'>POSTMAN</div>
                         </div>
 
                         <div className='icon-container'>
-                            <img src={git} className='icon icon__git'/> 
+                            <img alt='git' src={git} className='icon icon__git'/> 
                             <div className='skills skills__git'>GIT</div>
                         </div>
 
                         <div className='icon-container'>
-                            <img src={jira} className='icon icon__js'/>
+                            <img alt='jira' src={jira} className='icon icon__jira'/>
                             <div className='skills skills__jira'>JIRA</div>
                           </div>
 
                         <div className='icon-container'>
-                            <img src={heroku} className='icon icon__heroku'/>
+                            <img alt='heroku' src={heroku} className='icon icon__heroku'/>
                             <div className='skills skills__heroku'>HEROKU</div>
                           </div>
     
