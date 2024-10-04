@@ -5,9 +5,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #000;
+    color: #2ecccc;;
  
     @include for-tablet{
+        height: 40px;
         position: relative;
         top: 100px;
         width: 90%;
@@ -43,12 +44,13 @@
     justify-content: space-around;
     @include for-tablet{
         width: 200px;
+        margin-top: 10px;
     }
 }
 .footer-icon{
 font-size: 20px;
 text-decoration: none;
-color: #000;
+color: #2ecccc;
 cursor: pointer;
 @include for-tablet{
     font-size: 30px;

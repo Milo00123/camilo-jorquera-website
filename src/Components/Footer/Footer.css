@@ -80,10 +80,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: #000;
+  color: #2ecccc;
 }
 @media (min-width: 768px) {
   .footer {
+    height: 40px;
     position: relative;
     top: 100px;
     width: 90%;
@@ -125,13 +126,14 @@
 @media (min-width: 768px) {
   .footer-box-two {
     width: 200px;
+    margin-top: 10px;
   }
 }
 
 .footer-icon {
   font-size: 20px;
   text-decoration: none;
-  color: #000;
+  color: #2ecccc;
   cursor: pointer;
 }
 @media (min-width: 768px) {

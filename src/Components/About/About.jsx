@@ -23,17 +23,18 @@ function About() {
     <div className='camilo-container'>
     <img className='camilo-image' src={camilo} alt='camilo-image'/>
     <p className='p-about-me'>
-    I am currently based in Whistler, Canada. Throughout my years here,
-     I have refined my skills as both a mountain bike instructor at Whistler
-      Bike Park and a snowboard instructor at Whistler Blackcomb. My passion 
-      for guiding and teaching has been a significant part of my life - providing
-       me valuable experiences with teamwork, leadership and communication. 
-       As I transition into the world of software development, I offer a unique blend 
-       of discipline, problem solving capabilities, and a proven ability to learn and
-        adapt at a quick rate. These skills are essential in extreme sports and are equally 
-        vital in tech. I am thrilled about the opportunities to blend my present
-         background knowledge with new technologies, aiming to develop innovative 
-         solutions that enhance user experiences.
+    As a software engineer, I believe human life 
+    can be better by using technology to solve people’s necessities.
+     I developed a love for programming through my journey studying 
+     remotely at BrainStation, the idea that you can build anything
+      with Javascript makes me reinforce my philosophy that NOTHING 
+      IS IMPOSSIBLE. I used to enjoy building robots and spaceships
+       with whatever I had in my hands when I was a kid and I see
+        programming as ‘legos for adults’. When I am not at my desk
+         building or studying, I am mountain biking or snowboarding
+          in Whistler where I also instruct these two disciplines.
+           Being able to teach extreme sports and also use my brain 
+           to solve problems keeps my body and mind sharp.
 
 </p>
     </div>
@@ -54,15 +55,17 @@ function About() {
                         <img src={node} className='icon icon__js'/>    
                         <div className='skills skills__node'>NODEJS</div>
                     </div>
-                          <div className='icon-container'>
-                              <img src={axiosIcon} className='icon icon__axios'/>
-                              <div className='skills skills__axios'>AXIOS</div>
-                        </div>
+                 
 
                           <div className='icon-container'>
                               <img src={htmlIcon} className='icon icon__js'/>
                               <div className='skills skills__html'>HTML</div>
                           </div>
+
+                          <div className='icon-container'>
+                            <img src={mysql} className='icon icon__js'/> 
+                            <div className='skills skills__mysql'>MYSQL</div>
+                        </div>
 
                         <div className='icon-container'>
                               <img src={cssIcon} className='icon icon__js'/>
@@ -82,11 +85,11 @@ function About() {
                         <div className='icon-container'>
                             <img src={reactIcon2} className='icon icon__js'/> 
                             <div className='skills skills__router'>REACT ROUTER</div>
-                        </div>
+                        </div> 
 
                         <div className='icon-container'>
-                            <img src={mysql} className='icon icon__js'/> 
-                            <div className='skills skills__mysql'>MYSQL</div>
+                              <img src={axiosIcon} className='icon icon__axios'/>
+                              <div className='skills skills__axios'>AXIOS</div>
                         </div>
 
                         <div className='icon-container'>

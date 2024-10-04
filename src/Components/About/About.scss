@@ -40,6 +40,12 @@
     border: 2px solid black;
     border-radius: 100%;
     box-shadow: 0px 2px 5px 0px #0b0b0b;
+    animation: appear;
+    animation-duration: 4s;
+    @include for-desktop{
+        height: 300px;
+        margin-top: 50px;
+    }
 
 }
 .p-about-me{
@@ -49,14 +55,14 @@
  font-weight: 400;
 
  @include for-tablet{
-    font-size: 16px;
+    font-size: 1.25rem;
     width: 60%;
     margin-left: 50px;
     padding: 20px;
     border-radius: 30px;
  }
  @include for-desktop{
-    
+    font-size: 1.5rem;
  }
 }
 
@@ -76,6 +82,7 @@ width: 100%;
     }
 @include for-desktop{
  width: 500px;
+ margin-top: 130px;
 }
 }
 .icon-container{
@@ -164,6 +171,7 @@ width: 100%;
     align-items: center;
     @include for-desktop{
         margin-top: 0;
+        margin-right: 70px;
     }
 }
 .education-date{
@@ -189,7 +197,11 @@ h3{
 }
 .education-list{
 padding: 10px;
+@include for-tablet{
+    font-size: 1.25rem;
+}
 @include for-desktop{
+    font-size: 1.5rem;
     width: 400px;
     margin-left: 40px;
 }

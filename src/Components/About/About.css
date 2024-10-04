@@ -115,6 +115,14 @@
   border: 2px solid black;
   border-radius: 100%;
   box-shadow: 0px 2px 5px 0px #0b0b0b;
+  animation: appear;
+  animation-duration: 4s;
+}
+@media (min-width: 1280px) {
+  .camilo-image {
+    height: 300px;
+    margin-top: 50px;
+  }
 }
 
 .p-about-me {
@@ -125,13 +133,19 @@
 }
 @media (min-width: 768px) {
   .p-about-me {
-    font-size: 16px;
+    font-size: 1.25rem;
     width: 60%;
     margin-left: 50px;
     padding: 20px;
     border-radius: 30px;
   }
 }
+@media (min-width: 1280px) {
+  .p-about-me {
+    font-size: 1.5rem;
+  }
+}
+
 .my-skills {
   width: 100%;
   height: -moz-fit-content;
@@ -154,6 +168,7 @@
 @media (min-width: 1280px) {
   .skills-container {
     width: 500px;
+    margin-top: 130px;
   }
 }
 
@@ -253,6 +268,7 @@
 @media (min-width: 1280px) {
   .my-education {
     margin-top: 0;
+    margin-right: 70px;
   }
 }
 
@@ -283,8 +299,14 @@ h3 {
 .education-list {
   padding: 10px;
 }
+@media (min-width: 768px) {
+  .education-list {
+    font-size: 1.25rem;
+  }
+}
 @media (min-width: 1280px) {
   .education-list {
+    font-size: 1.5rem;
     width: 400px;
     margin-left: 40px;
   }
