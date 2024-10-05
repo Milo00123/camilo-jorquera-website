@@ -1,6 +1,7 @@
 @use '../../Styles/Partials/Styles' as *;
 .footer{
     margin-top: auto;
+    padding: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +20,7 @@
         justify-content: space-between;
     }
     @include for-desktop{
+        margin-top: 200px;
         width: 1000px;
          
     }

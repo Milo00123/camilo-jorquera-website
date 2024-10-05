@@ -1,0 +1,194 @@
+@use '../../Styles/Partials/Styles' as *;
+
+
+.projects-wrap{
+    width: 100%;
+  
+}
+.project-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.projects-title{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(180deg, #6beaea, #2d536c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.logo-findyourbuddy:hover{
+    animation: spin 4s infinite linear;
+}
+.logo-findyourbuddy{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    cursor: pointer;
+    @include for-desktop{
+        width: 300px;
+        height: 300px;
+    }
+}
+.date-project{
+    width: fit-content;
+    margin: auto;
+    color: #02ddff;;
+    font-weight: 600;
+    @include for-tablet{
+        font-size: 30px;
+    }
+}
+.project-description-container{
+padding-left: 0;
+}
+.project-description{
+    margin: auto;
+    width: 250px;
+    color: #f8f8f8;
+    padding-bottom: 30px;
+    &__sub{
+        color: #02ddff;;
+    }
+    @include for-tablet{
+        width:500px ;
+        font-size: 1.25rem;
+    }
+    @include for-desktop{
+        width: 1000px;
+        font-size: 1.5rem;
+    }
+}
+.app-technologies-container{
+    width: 100%;
+    height: fit-content;
+   
+}
+.sub-title-project{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(180deg, #6beaea, #2d536c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    @include for-desktop{
+        font-size: 50px;
+    }
+}
+.app-tenchnologies-container{
+    @include for-tablet{
+        width: 600px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+   
+}
+.app-technologies{
+    width: 250px;
+    margin: auto;
+    padding: 10px;
+    color: #f8f8f8;
+    font-weight: 600;
+    @include for-tablet{
+        width: 300px;
+        font-size: 1.25rem;
+        margin: 0;
+        margin-right: 100px;
+    }
+    @include for-desktop{
+        width: 500px;
+        font-size: 1.5rem;
+    }
+}
+.front-end-container{
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    perspective: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon-technologies{
+    background-color: #000;
+    height: 40px;
+    padding: 5px;
+    animation: spin 5s infinite linear;
+    transform-style: preserve-3d;
+    border: 1px solid black;
+    border-radius: 6px;
+    @include for-tablet{
+        height: 60px
+    }
+}
+.cube-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include for-tablet{
+        width: fit-content;
+    }
+}
+.cube {
+    background-color: #000;
+    margin: auto;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transform-style: preserve-3d;
+    animation: spin 5s infinite linear;
+    transform: rotateX(0deg) rotateY(0deg);
+    perspective: 1000px; 
+    @include for-tablet{
+        height: 60px;
+        width: 60px;
+    }
+    &__two{
+        animation: spin-left 5s infinite linear;
+    }
+  }
+  
+  .face {
+    border-radius: 6px;
+    background-color: #000;
+    border: 1px solid black;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    // background-color: transparent; 
+    box-shadow: 0 0 20px #2d536c; 
+    backface-visibility: hidden;
+  }
+  .face img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+  }
+
+  .front {
+    background-color: #000;
+    transform: translateZ(40px);
+    
+  }
+  .back {
+    background-color: #000;
+    transform: rotateY(180deg) translateZ(40px);
+  }
+  .left {
+    background-color: #000;
+    transform: rotateY(-90deg) translateZ(40px);
+  }
+  .right {
+    background-color: #000;
+    transform: rotateY(90deg) translateZ(40px);
+  }

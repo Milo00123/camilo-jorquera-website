@@ -2,10 +2,12 @@
 
 .home-container{
     width: 90%;
+    height: fit-content;
     margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
 
 }
 .home-camilo-container{
@@ -112,8 +114,7 @@
 
 }
 .home-subtitle{
-    margin: auto;
-    padding: 30px;
+    padding: 10px;
     background: linear-gradient(180deg, #ffc92a, #5f5515); 
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
@@ -127,6 +128,11 @@
         margin: auto;
         padding: 40px;
         font-size: 25px;
+    }
+    @include for-desktop{
+        font-size: 2rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
  
 }
@@ -145,7 +151,7 @@
 }
 .developer{
     position: absolute;
-    top:390px;
+    top:410px;
     margin: auto;
     height: 150px;
     opacity: 0; 
@@ -156,7 +162,7 @@
        height: 200px;
     }
     @include for-desktop{
-      top: 550px;
+      top: 620px;
      }
     
 }

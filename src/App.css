@@ -74,6 +74,23 @@
     font-weight: 1000;
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes spin-left {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
 body {
-  background: linear-gradient(180deg, #080a0a, #2d536c);
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9058823529), #2d536c);
 }/*# sourceMappingURL=App.css.map */

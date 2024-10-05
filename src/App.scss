@@ -1,5 +1,9 @@
 @use './Styles/Partials/Styles' as *;
+html{
+    // background: linear-gradient(180deg, #080a0a, #2d536c);
+}
 body {
+    min-height: 100vh;
     // font-family:  Rajdhani, sans-serif;
     // height: 100vh;
     // max-height:fit-content; 
@@ -8,7 +12,6 @@ body {
     // background-size: 30px 30px; 
     // color: #fff;
     // animation: moveDots 50s linear infinite; 
-    background: linear-gradient(180deg, #080a0a, #2d536c);
-    // background: linear-gradient(180deg, #000000e7, #2d536c);
+    
+    background: linear-gradient(180deg, #000000e7, #2d536c);
 }
-

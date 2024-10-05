@@ -49,8 +49,8 @@
 
 }
 .p-about-me{
-    font-size: 14px;
- color: #02ddff;
+ font-size: 14px;
+ color: #f8f8f8;
  padding: 40px;
  font-weight: 400;
 
@@ -95,6 +95,13 @@ width: 100%;
     @include for-tablet{
         padding: 20px;
     }
+}
+.icon:hover{
+    width: fit-content;
+    height: fit-content;
+    animation: appear 4s ;
+    
+    cursor: pointer;
 }
 .icon{
     max-height: 40px;
