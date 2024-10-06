@@ -39,6 +39,13 @@ const [isVisible, setIsVisible] =useState(false)
                  <span className='arrow-name'><MdArrowForwardIos /></span>
              <span className='link__name'>Projects</span>
                 </NavLink>
+                <NavLink 
+            className='link'
+            onClick={closeMenu}
+             to='/Contact'>
+                 <span className='arrow-name'><MdArrowForwardIos /></span>
+             <span className='link__name'>Contact</span>
+                </NavLink>
 
     </ul>
     <button className='header-btn' onClick={showMenu}>

@@ -1,0 +1,90 @@
+@use '../../Styles/Partials/Styles' as *;
+
+.contact-camilo-title{
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+    background: linear-gradient(180deg, #6beaea, #2d536c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.camilo-form{
+
+    width: 80%;
+    height: 500px;
+    padding: 10px;
+    border-radius: 6px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+
+}
+
+.form-input{
+    width: 80%;
+    height: 20px;
+    padding-left: 20px;
+    margin: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+     border: none;
+     border-radius: 5px;
+    background-color: #cfe0ea;
+    box-shadow:0px 2px 5px 0px #0b0b0b ;
+    &__textarea{
+     height: 150px;
+    }
+}.send-btn{
+    width: 85%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow:0px 2px 5px 0px #0b0b0b ;
+    background:none;
+    font-weight: 600;
+    color: #fafafa;
+}
+::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #7b7a75;
+    font-weight: 600;
+}
+.form-error{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    color: #ff133b;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    // box-shadow:0px 2px 5px 0px #ff133b ;
+}
+.error-icon{
+    font-size: 40px;
+  margin-top: 10px;
+}
+.success-message{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fafafa;
+}
+.success-icon{
+    margin-top: 10px;
+    font-size: 40px;
+}
