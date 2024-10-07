@@ -1,17 +1,7 @@
 @use './Styles/Partials/Styles' as *;
-html{
-    // background: linear-gradient(180deg, #080a0a, #2d536c);
-}
+
 body {
     min-height: 100vh;
-    // font-family:  Rajdhani, sans-serif;
-    // height: 100vh;
-    // max-height:fit-content; 
-    // background-color: #fafafa; 
-    // background-image: radial-gradient(circle, rgb(42, 104, 138) 1px, transparent 1px); 
-    // background-size: 30px 30px; 
-    // color: #fff;
-    // animation: moveDots 50s linear infinite; 
     background-color: rgb(0, 0, 0);
     background-image: url('./Assets/Images/Dark\ Blue\ Halloween\ Night.png');
     background-position: center;
