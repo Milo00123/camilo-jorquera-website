@@ -1,13 +1,23 @@
 @use '../../Styles/Partials/Styles' as *;
 
 .home-container{
-    width: 90%;
+    width: 100%;
     height: fit-content;
     margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    @include for-tablet{
+    
+       padding-top: 30px;
+      }
+      @include for-desktop{
+      background-size: 100%;
+      background-repeat: no-repeat;
+      }
 
 }
 .home-camilo-container{
@@ -114,6 +124,7 @@
 
 }
 .home-subtitle{
+  text-align: center;
     padding: 10px;
     background: linear-gradient(180deg, #ffc92a, #5f5515); 
     -webkit-background-clip: text; 
@@ -137,17 +148,19 @@
  
 }
 .home-images-container{
-    width: fit-content;
+    width: 90%;
     border-radius: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
-    background-color: rgba(5, 61, 80, 0.136); 
-    background-image: radial-gradient(circle, rgb(6, 6, 3) 1px, transparent 1px); 
-    background-size: 30px 30px; 
-    animation: moveDots 8s linear infinite; 
+    background-color: transparent; 
+    background-image: url('../../Assets/Images/prismas.png');
+    background-size: 100px 100px; 
+    animation: moveDots 10s linear infinite; 
     box-shadow: 0px 2px 5px 0px #0b0b0b;
-
+   @include for-tablet{
+    width: 500px;
+   }
 }
 .developer{
     position: absolute;

@@ -12,6 +12,12 @@ body {
     // background-size: 30px 30px; 
     // color: #fff;
     // animation: moveDots 50s linear infinite; 
-    
-    background: linear-gradient(180deg, #000000e7, #2d536c);
+    background-color: rgb(0, 0, 0);
+    background-image: url('./Assets/Images/Dark\ Blue\ Halloween\ Night.png');
+    background-position: center;
+    background-repeat:repeat;
+    animation: fadeIn 1s forwards 3.8s;
+    @include for-tablet{
+        background-size: 100%;
+    }
 }

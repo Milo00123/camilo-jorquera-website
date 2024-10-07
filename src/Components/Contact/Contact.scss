@@ -19,9 +19,10 @@
     margin: auto;
     display: flex;
     align-items: center;
-
     flex-direction: column;
-
+    @include for-tablet{
+        width: 600px;
+    }
 
 }
 
@@ -29,25 +30,27 @@
     width: 80%;
     height: 20px;
     padding-left: 20px;
-    margin: 15px;
+    margin: 5px;
     margin-left: 0;
     margin-right: 0;
     padding: 10px;
-     border: none;
+    color: #fafafa;
+     border: 1px solid #58a5dc;
      border-radius: 5px;
-    background-color: #cfe0ea;
+    background-color: #000;
     box-shadow:0px 2px 5px 0px #0b0b0b ;
     &__textarea{
      height: 150px;
     }
 }.send-btn{
     width: 85%;
-    height: 30px;
-    border-radius: 5px;
-    border: none;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #58a5dc;
     box-shadow:0px 2px 5px 0px #0b0b0b ;
     background:none;
     font-weight: 600;
+    font-size: 15px;
     color: #fafafa;
 }
 ::placeholder{
