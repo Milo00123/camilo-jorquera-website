@@ -12,7 +12,7 @@ import netlify from '../../Assets/Icons/netlify.png';
 import reactIcon2 from '../../Assets/Icons/react-router.png';
 import mysql from '../../Assets/Icons/mysql-logo.49776012f627ac4e42a9.png';
 import postman from '../../Assets/Icons/postman_processed.png';
-import git from '../../Assets/Icons/git_processed (1).png';
+import git from '../../Assets/Icons/gitcat2.png';
 import jira from '../../Assets/Icons/jira_processed.png';
 import heroku from '../../Assets/Icons/heroku_processed.png';
 function About() {

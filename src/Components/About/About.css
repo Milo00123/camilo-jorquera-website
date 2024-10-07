@@ -65,13 +65,13 @@
 }
 @keyframes pulseText {
   0% {
-    font-weight: 1000;
+    font-size: large;
   }
   50% {
-    font-weight: 700;
+    font-size: medium;
   }
   100% {
-    font-weight: 1000;
+    font-size: large;
   }
 }
 @keyframes spin {
@@ -101,18 +101,27 @@
     box-shadow: 0 0 10px #38a0e1;
   }
 }
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("../../Assets/Font/TitilliumWeb-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("../../Assets/Font/TitilliumWeb-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
 .title-about {
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 600;
   text-align: center;
   background: linear-gradient(180deg, #6beaea, #2d536c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
-.title-about__sub {
-  font-weight: 800;
 }
 
 .camilo-container {
@@ -198,6 +207,12 @@
   }
 }
 
+.icon-container:hover {
+  background-color: #213541;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .icon-container {
   width: 100px;
   height: -moz-fit-content;
@@ -211,15 +226,6 @@
   .icon-container {
     padding: 20px;
   }
-}
-
-.icon:hover {
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  animation: appear 4s;
-  cursor: pointer;
 }
 
 .icon {
@@ -237,10 +243,9 @@
 
 .skills {
   font-size: 20px;
-  font-weight: 1000;
+  font-weight: 600;
   text-align: center;
   padding: 10px;
-  animation: pulseText 3s infinite;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
@@ -260,34 +265,34 @@
   color: #7ecd64;
 }
 .skills__axios {
-  color: #af3627;
+  color: #ff1e00;
 }
 .skills__html {
   color: #d1210c;
 }
 .skills__css {
-  color: #0883be;
+  color: #0eb3ff;
 }
 .skills__sass {
-  color: #e31c94;
+  color: #ff099d;
 }
 .skills__netlify {
-  color: #0e6a4a;
+  color: #00ffa6;
 }
 .skills__router {
   color: #00ffff;
 }
 .skills__mysql {
-  color: #004269;
+  color: #ffd000;
 }
 .skills__postman {
   color: #ff8100;
 }
 .skills__git {
-  color: #00000c;
+  color: #fff;
 }
 .skills__jira {
-  color: #004269;
+  color: #01a2ff;
 }
 .skills__heroku {
   color: #ff0f9f;

@@ -1,0 +1,16 @@
+$defaultFont: 'TitilliumWeb';
+
+// Fonts
+@font-face {
+  font-family: $defaultFont;
+  src: url('../../Assets/Font/TitilliumWeb-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $defaultFont;
+  src: url('../../Assets/Font/TitilliumWeb-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 600;
+}

@@ -7,6 +7,9 @@ import mysql from '../../Assets/Icons/mysql-logo.49776012f627ac4e42a9.png';
 import Sass from '../../Assets/Icons/sass.png';
 import node from '../../Assets/Icons/node.png';
 import knexIcon from '../../Assets/Icons/knex-js.svg';
+import { GiClick } from "react-icons/gi";
+
+
 import { Link } from 'react-router-dom';
 function Projects() {
   return (<>
@@ -17,6 +20,9 @@ function Projects() {
         <img  className='logo-findyourbuddy' src={findyourbuddy} alt='findyourbuddy'/>
     </Link>
     <span className='date-project'>Sep 27 2024</span>
+   <Link className='date-project' to='https://67006afc58a34936a8cb76e7--guileless-gecko-cf6cd4.netlify.app/'><span>Go to app<GiClick />
+
+</span></Link> 
     <ul className='project-description-container'>
       <li className='project-description'>
       FindYourBuddy is an app designed to connect riders

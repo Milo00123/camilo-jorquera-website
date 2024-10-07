@@ -39,10 +39,12 @@
     margin: auto;
     color: #02ddff;;
     font-weight: 600;
+    text-decoration: none;
     @include for-tablet{
         font-size: 30px;
     }
 }
+.click-app{}
 .project-description-container{
 padding-left: 0;
 }

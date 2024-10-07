@@ -52,7 +52,7 @@
 }
 .home-camilo{
     font-size: 60px;
-    font-weight: 900;
+    font-weight: 600;
     background: linear-gradient(180deg, #6beaea, #2d536c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -131,9 +131,10 @@
     -webkit-text-fill-color: transparent;
     background-clip: text; 
     color: transparent; 
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
     animation: fadeIn 1s forwards;
-    animation-delay: 3.8s; /* Delay of 3 seconds */
+    animation-delay: 3.8s; 
+    font-weight: 600;
    
     @include for-tablet{
         margin: auto;
@@ -164,18 +165,18 @@
 }
 .developer{
     position: absolute;
-    top:410px;
+    top:470px;
     margin: auto;
     height: 150px;
     opacity: 0; 
     animation: fadeIn 1s forwards;
     animation-delay: 4s;
     @include for-tablet{
-        top: 570px;
+        top: 630px;
        height: 200px;
     }
     @include for-desktop{
-      top: 620px;
+      top: 660px;
      }
     
 }

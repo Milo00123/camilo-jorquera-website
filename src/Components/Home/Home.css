@@ -65,13 +65,13 @@
 }
 @keyframes pulseText {
   0% {
-    font-weight: 1000;
+    font-size: large;
   }
   50% {
-    font-weight: 700;
+    font-size: medium;
   }
   100% {
-    font-weight: 1000;
+    font-size: large;
   }
 }
 @keyframes spin {
@@ -100,6 +100,18 @@
   100% {
     box-shadow: 0 0 10px #38a0e1;
   }
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("../../Assets/Font/TitilliumWeb-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TitilliumWeb";
+  src: url("../../Assets/Font/TitilliumWeb-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
 }
 .home-container {
   width: 100%;
@@ -165,7 +177,7 @@
 
 .home-camilo {
   font-size: 60px;
-  font-weight: 900;
+  font-weight: 600;
   background: linear-gradient(180deg, #6beaea, #2d536c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -233,9 +245,10 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  opacity: 0; /* Initially hidden */
+  opacity: 0;
   animation: fadeIn 1s forwards;
-  animation-delay: 3.8s; /* Delay of 3 seconds */
+  animation-delay: 3.8s;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .home-subtitle {
@@ -272,7 +285,7 @@
 
 .developer {
   position: absolute;
-  top: 410px;
+  top: 470px;
   margin: auto;
   height: 150px;
   opacity: 0;
@@ -281,13 +294,13 @@
 }
 @media (min-width: 768px) {
   .developer {
-    top: 570px;
+    top: 630px;
     height: 200px;
   }
 }
 @media (min-width: 1280px) {
   .developer {
-    top: 620px;
+    top: 660px;
   }
 }
 

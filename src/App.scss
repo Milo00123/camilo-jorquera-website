@@ -1,6 +1,7 @@
 @use './Styles/Partials/Styles' as *;
 
 body {
+    font-family: $defaultFont;
     padding-top: 60px;
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
