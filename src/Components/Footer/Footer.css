@@ -90,6 +90,17 @@
     transform: rotateY(-360deg);
   }
 }
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 10px #38a0e1;
+  }
+  50% {
+    box-shadow: 0 0 30px #38a0e1;
+  }
+  100% {
+    box-shadow: 0 0 10px #38a0e1;
+  }
+}
 .footer {
   margin-top: auto;
   padding: auto;

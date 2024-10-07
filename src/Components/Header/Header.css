@@ -90,6 +90,17 @@
     transform: rotateY(-360deg);
   }
 }
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 10px #38a0e1;
+  }
+  50% {
+    box-shadow: 0 0 30px #38a0e1;
+  }
+  100% {
+    box-shadow: 0 0 10px #38a0e1;
+  }
+}
 .header {
   width: 100%;
   height: 50px;
@@ -97,14 +108,17 @@
   align-items: center;
   justify-content: space-between;
   background-color: #fafafa;
+  position: fixed;
+  top: 0;
 }
 @media (min-width: 768px) {
   .header {
     width: 90%;
-    margin: auto;
+    top: 20px;
     border-radius: 10px;
     box-shadow: 0px 2px 5px 0px #0b0b0b;
-    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 @media (min-width: 1280px) {
@@ -129,6 +143,12 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .header-btn {
@@ -162,6 +182,7 @@
 }
 
 .header-btn .close-icon.visible {
+  color: #0b0b0b;
   opacity: 1;
   transform: rotate(90deg);
 }
@@ -182,7 +203,7 @@
 }
 @media (min-width: 768px) {
   .nav-links-wrap {
-    width: 300px;
+    width: 400px;
     height: 100%;
     opacity: 1;
     display: flex;
@@ -200,6 +221,10 @@
   transition: height 0.5s ease, opacity 0.5s ease;
 }
 
+.link__name {
+  position: relative;
+}
+
 .link {
   font-size: 14px;
   width: 100%;
@@ -214,6 +239,7 @@
 }
 @media (min-width: 768px) {
   .link {
+    margin-right: 5px;
     width: 150px;
     height: 80%;
     display: flex;
@@ -221,7 +247,39 @@
     align-items: center;
     padding: 0;
     border-radius: 4px;
+    position: relative;
+    transition: color 0.4s linear;
+    cursor: pointer;
   }
+}
+
+@media (min-width: 768px) {
+  .link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffc92a;
+    z-index: 0;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    border-radius: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .link:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.link:hover .arrow-name,
+.link.active .arrow-name {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .arrow-name {
@@ -235,4 +293,8 @@
   transform: translateX(0);
   opacity: 1;
   border-bottom: 2px solid rgb(28, 26, 26);
+}
+
+.menu-icon {
+  color: #0b0b0b;
 }/*# sourceMappingURL=Header.css.map */

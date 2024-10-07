@@ -90,7 +90,19 @@
     transform: rotateY(-360deg);
   }
 }
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 10px #38a0e1;
+  }
+  50% {
+    box-shadow: 0 0 30px #38a0e1;
+  }
+  100% {
+    box-shadow: 0 0 10px #38a0e1;
+  }
+}
 body {
+  padding-top: 60px;
   min-height: 100vh;
   background-color: rgb(0, 0, 0);
   background-image: url("./Assets/Images/Dark Blue Halloween Night.png");

@@ -1,6 +1,7 @@
 @use './Styles/Partials/Styles' as *;
 
 body {
+    padding-top: 60px;
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
     background-image: url('./Assets/Images/Dark\ Blue\ Halloween\ Night.png');
