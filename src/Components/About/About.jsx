@@ -15,6 +15,9 @@ import postman from '../../Assets/Icons/postman_processed.png';
 import git from '../../Assets/Icons/gitcat2.png';
 import jira from '../../Assets/Icons/jira_processed.png';
 import heroku from '../../Assets/Icons/heroku_processed.png';
+import { Link } from 'react-router-dom';
+import { GiClick } from "react-icons/gi";
+
 function About() {
 
   return (<>
@@ -37,7 +40,14 @@ function About() {
            to solve problems keeps my body and mind sharp.
 
 </p>
+     
+
     </div>
+    <div className='resume-btn-container' >
+       <Link to='https://drive.google.com/file/d/110kmBBnqoKOFGWRa2gbGNwsuPOCuGB_s/view?usp=sharing'>
+        <button className='resume-btn'>Resume<GiClick /></button>
+        </Link>
+        </div>
   <div className='skills-education-wrap'>
       <div className='my-skills'>
         <h2 className='title-about title-about__sub'>MY SKILLS</h2>

@@ -27,7 +27,6 @@
  }
  @include for-desktop{
     width: 1000px;
-    padding-bottom: 100px;
  }
 }
 .camilo-image{
@@ -62,7 +61,62 @@
     font-size: 1.5rem;
  }
 }
+.resume-btn-container{
+    width:100%;
+    height: fit-content;
+    display: flex;
+    text-decoration: none;
+    margin-left: 40px;
+   @include for-tablet{
+    width: 80%;
+    margin: auto;
+    display: flex;
+ justify-content: flex-end;
+   }
+   @include for-desktop{
+    width: 1000px;
+    padding-bottom: 100px;
+   }
 
+}
+.resume-btn{
+    width: 150px;
+    height: 40px;
+    font-family: $defaultFont;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid #58a5dc;
+    box-shadow:0px 2px 5px 0px #0b0b0b ;
+    background:none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fafafa;
+    position: relative; 
+    overflow: hidden; 
+    transition: color 0.4s linear;
+    cursor: pointer;
+   @include for-desktop{
+    margin-right: 50px;
+   }
+}
+.resume-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #67ad9a, #58a5dc);
+    z-index: -1;
+    transition: transform 1s ;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+  }
+  .resume-btn:hover::before {
+    transform: scaleX(1);
+
+  }
 .my-skills{
 width: 100%;
  height: fit-content;

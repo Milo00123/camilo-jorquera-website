@@ -16,11 +16,11 @@ function Projects() {
   <div className='projects-wrap'>
     <h1 className='projects-title'>Projects</h1>
     <div className='project-container'>
-      <Link className='logo-findyourbuddy' to='https://67006afc58a34936a8cb76e7--guileless-gecko-cf6cd4.netlify.app/' >
+      <Link className='logo-findyourbuddy' to='https://67006afc58a34936a8cb76e7--findyourbuddy.netlify.app/' >
         <img  className='logo-findyourbuddy' src={findyourbuddy} alt='findyourbuddy'/>
     </Link>
     <span className='date-project'>Sep 27 2024</span>
-   <Link className='date-project' to='https://67006afc58a34936a8cb76e7--guileless-gecko-cf6cd4.netlify.app/'><span>Go to app<GiClick />
+   <Link className='date-project' to='https://67006afc58a34936a8cb76e7--findyourbuddy.netlify.app/'><span>Go to app<GiClick />
 
 </span></Link> 
     <ul className='project-description-container'>

@@ -148,7 +148,7 @@ padding-left: 0;
     width: 40px;
     height: 40px;
     transform-style: preserve-3d;
-    animation: spin 5s infinite linear;
+    animation: spin 10s infinite linear;
     transform: rotateX(0deg) rotateY(0deg);
     perspective: 1000px; 
     @include for-tablet{
@@ -156,7 +156,7 @@ padding-left: 0;
         width: 60px;
     }
     &__two{
-        animation: spin-left 5s infinite linear;
+        animation: spin-left 10s infinite linear;
     }
   }
   
@@ -166,8 +166,7 @@ padding-left: 0;
     border: 1px solid black;
     position: absolute;
     width: 40px;
-    height: 40px;
-    // background-color: transparent; 
+    height: 40px; 
     box-shadow: 0 0 20px #2d536c; 
     backface-visibility: hidden;
   }

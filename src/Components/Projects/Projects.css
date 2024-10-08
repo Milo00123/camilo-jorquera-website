@@ -293,7 +293,7 @@
   width: 40px;
   height: 40px;
   transform-style: preserve-3d;
-  animation: spin 5s infinite linear;
+  animation: spin 10s infinite linear;
   transform: rotateX(0deg) rotateY(0deg);
   perspective: 1000px;
 }
@@ -304,7 +304,7 @@
   }
 }
 .cube__two {
-  animation: spin-left 5s infinite linear;
+  animation: spin-left 10s infinite linear;
 }
 
 .face {
