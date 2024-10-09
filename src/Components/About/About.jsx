@@ -44,7 +44,7 @@ function About() {
 
     </div>
     <div className='resume-btn-container' >
-       <Link to='https://drive.google.com/file/d/110kmBBnqoKOFGWRa2gbGNwsuPOCuGB_s/view?usp=sharing'>
+       <Link to='https://drive.google.com/file/d/1c3PNMD0Opz_BoeV40cSx0PvTMda0DvMC/view?usp=sharing'>
         <button className='resume-btn'>Resume<GiClick /></button>
         </Link>
         </div>
