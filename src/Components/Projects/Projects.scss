@@ -83,6 +83,7 @@ padding-left: 0;
         font-size: 50px;
     }
 }
+
 .app-tenchnologies-container{
     @include for-tablet{
         width: 600px;
@@ -193,3 +194,23 @@ padding-left: 0;
     background-color: #000;
     transform: rotateY(90deg) translateZ(40px);
   }
+
+  .diagram-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+}
+.diagram{
+    width: 80%;
+    height:fit-content;
+    padding: auto;
+    border-radius: 10px;
+    @include for-tablet{
+        width: 60%;
+    }
+    @include for-desktop{
+        width: 1000px;
+    }
+}

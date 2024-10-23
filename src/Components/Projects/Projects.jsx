@@ -8,6 +8,7 @@ import Sass from '../../Assets/Icons/sass.png';
 import node from '../../Assets/Icons/node.png';
 import knexIcon from '../../Assets/Icons/knex-js.svg';
 import { GiClick } from "react-icons/gi";
+import diagram from '../../Assets/Images/diagram.png';
 
 
 import { Link } from 'react-router-dom';
@@ -57,6 +58,8 @@ function Projects() {
        </span>
        <div className='app-technologies-container'>
        <h2 className='sub-title-project'>What I used </h2>
+
+       
            <div className='app-tenchnologies-container'>
               <p className='app-technologies'> 
                 Front end built using JavaScript, React,
@@ -90,6 +93,10 @@ function Projects() {
               </div>
           </div>
           </div>
+          <h2 className='sub-title-project'>Diagram</h2>
+          <div className='diagram-container'>
+            <img  className='diagram' src={diagram} alt='findyourbuddy'/>
+       </div>
         </div>
    
          </div>

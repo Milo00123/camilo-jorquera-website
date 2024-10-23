@@ -20,11 +20,13 @@
       }
 
 }
+
 .home-camilo-container{
     margin-top: 50px;
     margin-left: 5%;
     animation-name: slide-left;
     animation-duration: 2s;
+    cursor: pointer;
     @include for-tablet{
         margin-left: 20%;
     }
@@ -41,6 +43,7 @@
     margin-left: 5%;
     animation-name: slide-right;
     animation-duration: 2s;
+    cursor: pointer;
     @include for-tablet{
         margin-left: 25%;
     }
@@ -49,6 +52,9 @@
         margin-right: auto;
         margin-top: 50px;
      }
+}
+.home-camilo__1:hover{
+ color: #6beaea;
 }
 .home-camilo{
     font-size: 60px;

@@ -2,14 +2,16 @@
 import './Home.scss';
 import developer from '../../Assets/Images/IMG_4036-removebg-preview.png';
 import mountain from '../../Assets/Images/IMG_4034-removebg-preview.png';
+import { useNavigate } from 'react-router';
 
 
 function Home() {
+        const navigate = useNavigate();
 
   return (<>
   <div className='home-container'>
   
-    <div className='home-camilo-container'>
+    <div onClick={()=>navigate('/about')} className='home-camilo-container'>
             <span className='home-camilo home-camilo__1'>C</span>
             <span className='home-camilo home-camilo__2'>a</span>
             <span className='home-camilo home-camilo__3'>m</span>
@@ -17,7 +19,7 @@ function Home() {
             <span className='home-camilo home-camilo__5'>l</span>
             <span className='home-camilo home-camilo__6'>o</span>
       </div>
-            <div className='home-camilo-last-name'>
+            <div onClick={()=>navigate('/about')} className='home-camilo-last-name'>
                     <span className='home-camilo  home-camilo__7'>J</span>
                     <span className='home-camilo  home-camilo__8'>o</span>
                     <span className='home-camilo  home-camilo__9'>r</span>
