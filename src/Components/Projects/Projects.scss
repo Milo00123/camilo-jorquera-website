@@ -203,12 +203,13 @@ padding-left: 0;
 
 }
 .diagram{
-    width: 80%;
-    height:fit-content;
+    width: 300px;
+    height: 300px;
     padding: auto;
     border-radius: 10px;
     @include for-tablet{
         width: 60%;
+        height:fit-content;
     }
     @include for-desktop{
         width: 1000px;
