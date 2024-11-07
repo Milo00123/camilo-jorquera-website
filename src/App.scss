@@ -2,14 +2,17 @@
 
 body {
     font-family: $defaultFont;
-    padding-top: 60px;
     min-height: 100vh;
-    background-color: rgb(0, 0, 0);
-    background-image: url('./Assets/Images/Dark\ Blue\ Halloween\ Night.png');
+    background-image: url('./Assets/Images/Untitled_Artwork\ 3.png');
+    background-size:cover;
     background-position: center;
-    background-repeat:repeat;
-    animation: fadeIn 1s forwards 3.8s;
+    z-index: 1;
+    background-attachment: fixed; 
+    margin: 0;
+    padding-top: 60px;
+    overscroll-behavior: none;
     @include for-tablet{
         background-size: 100%;
     }
 }
+

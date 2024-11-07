@@ -21,17 +21,15 @@
 
 }
 
+
 .home-camilo-container{
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 5%;
     animation-name: slide-left;
-    animation-duration: 2s;
+    animation-duration: 1s;
     cursor: pointer;
     @include for-tablet{
-        margin-left: 20%;
-    }
-    @include for-desktop{
-        height: 20px;
+        height: fit-content;
         margin-left:auto ;
         margin-right: auto;
         margin-top: 50px;
@@ -40,14 +38,13 @@
 }
 
 .home-camilo-last-name{
+  width: fit-content;
     margin-left: 5%;
     animation-name: slide-right;
-    animation-duration: 2s;
+    animation-duration: 1s;
     cursor: pointer;
+
     @include for-tablet{
-        margin-left: 25%;
-    }
-    @include for-desktop{
         margin-left:auto ;
         margin-right: auto;
         margin-top: 50px;
@@ -57,75 +54,81 @@
  color: #6beaea;
 }
 .home-camilo{
-    font-size: 60px;
+    font-size: 4rem;
     font-weight: 600;
-    background: linear-gradient(180deg, #6beaea, #2d536c);
+    font-family: Eina 01;
+    background: $titleColor;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+    color: #fff;
     animation-name: appear;
-    animation-delay: 2s;
+    animation-delay: 0s;
     animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     &__1 { 
-        animation-delay: 2.2s;
+        animation-delay: 1s;
       }
       
       &__2 { 
-        animation-delay: 2.3s;
+        animation-delay: 1.2s;
       }
       
       &__3 { 
-        animation-delay: 2.4s;
+        animation-delay: 1.3s;
       }
       
       &__4 { 
-        animation-delay: 2.5s;
+        animation-delay: 1.4s;
       }
       &__5 { 
-        animation-delay: 2.6s;
+        animation-delay: 1.5s;
       }
       
       &__6 { 
-        animation-delay: 2.7s;
+        animation-delay: 1.6s;
       }
       
       &__7 { 
-        animation-delay: 2.8s;
+        animation-delay: 1s;
       }
       
       &__8 { 
-        animation-delay: 2.9s;
+        animation-delay: 1.2s;
       }
       
       &__9 { 
-        animation-delay: 3s;
+        animation-delay: 1.3s;
       }
       
       &__10 { 
-        animation-delay: 3.2s;
+        animation-delay: 1.4s;
       }
       
       &__11 { 
-        animation-delay: 3.3s;
+        animation-delay: 1.5s;
       }
       
       &__12 { 
-        animation-delay: 3.4s;
+        animation-delay: 1.6s;
       }
       
       &__13 { 
-        animation-delay: 3.5s;
+        animation-delay: 1.7s;
       }
       
       &__14 { 
-        animation-delay: 3.6s;
+        animation-delay: 1.8s;
       }
       
    @include for-tablet{
-    font-size: 70px;
+    font-size: 10vw;
+
+}
+@include for-desktop{
+  font-size: 5vw;
 }
 
 }
@@ -139,7 +142,7 @@
     color: transparent; 
     opacity: 0;
     animation: fadeIn 1s forwards;
-    animation-delay: 3.8s; 
+    animation-delay: 2s; 
     font-weight: 600;
    
     @include for-tablet{
@@ -154,46 +157,86 @@
     }
  
 }
-.home-images-container{
-    width: 90%;
-    border-radius: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    background-color: transparent; 
-    background-image: url('../../Assets/Images/prismas.png');
-    background-size: 100px 100px; 
-    animation: moveDots 10s linear infinite; 
-    box-shadow: 0px 2px 5px 0px #0b0b0b;
-   @include for-tablet{
-    width: 500px;
-   }
+.home-light-container{
+width: 80%;
+height: fit-content;
+display: flex;
+justify-content: flex-end;
+@include for-tablet{
+width: 65%;
+
 }
-.developer{
-    position: absolute;
-    top:470px;
-    margin: auto;
-    height: 150px;
-    opacity: 0; 
-    animation: fadeIn 1s forwards;
-    animation-delay: 4s;
-    @include for-tablet{
-        top: 630px;
-       height: 200px;
-    }
-    @include for-desktop{
-      top: 660px;
-     }
-    
+@include for-desktop{
+  width: 60%;
+  }
 }
-.mountain{
-    height: 250px;
-    animation-name: slide-bottom;
-    animation-duration: 1s;
-    
-    @include for-tablet{
-        height: 400px;
-     }
-     
-     
+.light:hover{
+  border-radius: 6px;
+  animation: rotate360 1s linear infinite;
+  box-shadow: 
+  inset 0 0 30px 0 #a3d5ff,    
+  inset 20px 0 30px #80bfff,    
+  inset -20px 0 30px #4f94d4,    
+  inset 20px 0 300px #1f77b4,    
+  inset -20px 0 300px #4ab0f8,   
+  0 0 50px #a3d5ff,              
+  -10px 0 100px #66b2ff,       
+  10px 0 80px #3399ff;           
+  cursor: pointer;
+}
+.light{
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  background-color: #ffc92a;
+  border-radius: 100%;
+  border: none;
+  animation: moveRightLeft 4s ease-in-out infinite;
+  box-shadow: $sunLight;
+ @include for-tablet{
+  right: 100px;
+ }
+}
+.light-container{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  position: absolute;
+  animation-name: appear;
+  animation-duration: 5s;
+}
+.light__two{
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  background-color: #ffc92a;
+  border-radius: 100%;
+  border: none;
+  box-shadow: $sunLight;
+   animation: moveUpDown 5s linear infinite;
+  
+}
+.light__three{
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  background-color: #ffc92a;
+  border-radius: 6px;
+  border: none;
+  box-shadow: $sunLight;
+  animation: rotate360 40s linear infinite;
+
+}
+.light__four{
+  width: 20px;
+  height: 100px;
+  background-color: #ffc92a;
+  border-radius: 10px;
+  border: none;
+  box-shadow: $sunLight;
+  animation: rotate360 90s linear infinite;
+
 }

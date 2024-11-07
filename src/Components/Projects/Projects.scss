@@ -15,7 +15,7 @@
     font-size: 50px;
     font-weight: 900;
     text-align: center;
-    background: linear-gradient(180deg, #6beaea, #2d536c);
+    background: $titleColor;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -44,7 +44,7 @@
         font-size: 30px;
     }
 }
-.click-app{}
+
 .project-description-container{
 padding-left: 0;
 }
@@ -74,9 +74,7 @@ padding-left: 0;
     font-size: 40px;
     font-weight: 900;
     text-align: center;
-    background: linear-gradient(180deg, #6beaea, #2d536c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background: $titleColor;
     background-clip: text;
     color: transparent;
     @include for-desktop{
