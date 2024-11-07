@@ -8,7 +8,7 @@
     font-size: 50px;
     font-weight: 600;
     text-align: center;
-    background: linear-gradient(180deg, #6beaea, #2d536c);
+    background: $titleColor;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -34,10 +34,8 @@
     width: auto; 
     display: block; 
     margin: 0 auto; 
-    border: 1px solid black;
     border-radius: 100%;
-    box-shadow: 0px 2px 5px 0px #38a0e1;
-    animation: shadowPulse 4s ease-in-out infinite, appear 2s ease-in-out;
+    animation: shadowPulse 4s ease-in-out infinite, appear 2s ease-in-out, moveUpDown;
     @include for-desktop{
         height: 300px;
         margin-top: 50px;
@@ -172,7 +170,6 @@ width: 100%;
     font-weight: 600;
     text-align: center;
     padding: 10px;
-    // animation: pulseText 3s infinite;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     @include for-tablet{

@@ -17,31 +17,36 @@ const [isVisible, setIsVisible] =useState(false)
  const closeMenu = () => {
     setIsVisible(false);
   };
+  const handleNavigation = (path) => {
+    navigate(path);         
+    window.scrollTo(0, 0);  
+    closeMenu(); 
+  };
   return (<>
     <header className='header'>
         <div
-         onClick={()=>navigate('/')}
+         onClick={()=>handleNavigation('/')}
          className='logo'>Camilo Jorquera</div>
    <nav className='main-nav'>
 
     <ul className={`nav-links-wrap ${isVisible ? 'visible' : ''}`}>
             <NavLink
              className='link' to='About'
-             onClick={closeMenu} >
+             onClick={()=> handleNavigation()} >
                 <span className='arrow-name'><MdArrowForwardIos /></span>
                 <span className='link__name'>About</span>
                 
              </NavLink>
             <NavLink 
             className='link'
-            onClick={closeMenu}
+            onClick={()=>handleNavigation()}
              to='/Projects'>
                  <span className='arrow-name'><MdArrowForwardIos /></span>
              <span className='link__name'>Projects</span>
                 </NavLink>
                 <NavLink 
             className='link'
-            onClick={closeMenu}
+            onClick={()=> handleNavigation()}
              to='/Contact'>
                  <span className='arrow-name'><MdArrowForwardIos /></span>
              <span className='link__name'>Contact</span>
